@@ -1,6 +1,9 @@
 
 
 function Table(props){
+    
+    let characterRows = props.characterArray.map((character)=> CreateCharacterRow(character))
+    console.log(characterRows)
     const table = (
         <table className="table">
             <thead>
@@ -14,7 +17,7 @@ function Table(props){
                 </tr>
             </thead>
             <tbody>
-                <InsertTableRows characters = {props.characterArray}/>
+                {characterRows}
             </tbody>
         </table>
     )
@@ -22,24 +25,16 @@ function Table(props){
 }
 export default Table
 
-
-function InsertTableRows(props){
-    
-    const characters = props.characters
-
-    let tableRows = []
-    for(let i =0; i < characters.length; i++){
-        const row = (
-            <tr>
-                <th scope="row">{characters[i].name}</th> 
-                <td>{characters[i].birthDate}</td>
-                <td>{characters[i].height}</td>
-                <td>{characters[i].mass}</td>
-                <td>{characters[i].homeworld}</td>
-                <td>{characters[i].species}</td>
-            </tr>
-        )
-        tableRows.push(row)
-    }
-    return tableRows
+function CreateCharacterRow(character){
+    const row = (
+        <tr>
+            <th scope="row">{character.name}</th> 
+            <td>{character.birthDate}</td>
+            <td>{character.height}</td>
+            <td>{character.mass}</td>
+            <td>{character.homeworld}</td>
+            <td>{character.species}</td>
+        </tr>
+    )
+    return row
 }
