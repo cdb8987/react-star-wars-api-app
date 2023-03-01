@@ -1,60 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 import Table from './Components/Table';
+import React, {useState} from 'react';
 
-let startingTable = [
-  {
-      name: 'TestCharacter1',
-      birthDate: 'TestBirthdate',
-      height: 'TestHeight', 
-      mass: 'TestMass', 
-      homeworld: 'TestHomeworld', 
-      species: 'TestSpecies'
-  },
-  {
-      name: 'TestCharacter2',
-      birthDate: 'TestBirthdate',
-      height: 'TestHeight', 
-      mass: 'TestMass', 
-      homeworld: 'TestHomeworld', 
-      species: 'TestSpecies'
-  },{
-    name: 'TestCharacter3',
-    birthDate: 'TestBirthdate',
-    height: 'TestHeight', 
-    mass: 'TestMass', 
-    homeworld: 'TestHomeworld', 
-    species: 'TestSpecies'
-},
-{
-    name: 'TestCharacter4',
-    birthDate: 'TestBirthdate',
-    height: 'TestHeight', 
-    mass: 'TestMass', 
-    homeworld: 'TestHomeworld', 
-    species: 'TestSpecies'
-},
-  {
-      name: 'TestCharacter5',
-      birthDate: 'TestBirthdate',
-      height: 'TestHeight', 
-      mass: 'TestMass', 
-      homeworld: 'TestHomeworld', 
-      species: 'TestSpecies'
-  },
-
-]
 
 
 
 function App() {
+  // const [characterTable, setCharacterTable] = useState(startingTable)
   return (
     <>
     
-    <Table characterArray={startingTable}/>
+    <Table/>
     
     </>
   );
 }
+
+
 
 export default App;
