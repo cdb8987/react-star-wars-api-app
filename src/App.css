@@ -3,11 +3,12 @@ html {
   background-image: url('starwars_background.jfif');
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: lightgray;
 
 }
 
 .table {
-  background-color: transparent;
+  background-color: lightgray;
 
 }
 
@@ -15,6 +16,7 @@ html {
 
 .App {
   text-align: center;
+  background-color: lightgray;
 }
 
 .App-logo {

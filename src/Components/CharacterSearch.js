@@ -6,7 +6,7 @@ function CharacterSearch(props) {
       }
         
     return (
-        <div style={{ textAlign: 'center' }}>
+        <div style={{ textAlign: 'center', backgroundColor: 'lightgray' }}>
             <label htmlFor="characterinput">Select Character</label>
             <input type="text" id="characterinput" onChange={handleChange}/>
         </div>

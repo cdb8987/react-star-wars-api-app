@@ -110,7 +110,7 @@ function getCharacter(url, i, limit) {  //1. gets character from api 2. pushes t
   
   const pageChangeButtons = (
         
-      <div id='SearchResultsPageNavBar'>
+      <div id='SearchResultsPageNavBar' style={{backgroundColor: 'lightgray' }}>
           <button onClick={()=>RequestTenCharacters()}className="btn btn-primary">1</button><button onClick={()=>RequestTenCharacters(10)}className="btn btn-primary">2</button><button onClick={()=>RequestTenCharacters(20)}className="btn btn-primary">3</button><button onClick={()=>RequestTenCharacters(30)}className="btn btn-primary">4</button><button onClick={()=>RequestTenCharacters(40)}className="btn btn-primary">5</button><button onClick={()=>RequestTenCharacters(50)}className="btn btn-primary">6</button><button onClick={()=>RequestTenCharacters(60)}className="btn btn-primary">7</button><button onClick={()=>RequestTenCharacters(70)}className="btn btn-primary">8</button><button onClick={()=>RequestTenCharacters(80)}className="btn btn-primary">9</button>
       </div>
   )
