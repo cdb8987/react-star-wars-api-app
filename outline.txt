@@ -1,11 +1,1 @@
-App Components:
-    1. Character table object that holds character data (Name, BirthDate, Height, Mass, Homeworld, Species).  
-        -Stored and modified using usestate()
-            -update data in <form> elements using 'OnChange' handlers combined with state
-            -useEffect() when page loads and when data changes
-        -Rendered to the screen as a Table
-    2. Pagination bar which flips to the next page of results 
-    3. Search bar which includes a form you can submit to repopulate table data with search results
 
-App Styling:  
-    -Background image of Death Star

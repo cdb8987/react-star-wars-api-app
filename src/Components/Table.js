@@ -1,11 +1,6 @@
-//takes an array of 10 character objects passed in as a prop.  Returns jsx table element
-
 function Table(props){
   const rows = []
   for(let i=0; i<props.characterArray.length; i++){
-    // console.log('at index', i, ' characterarray is', JSON.stringify(props.characterArray))
-    // console.log('props.characterArray[i].name =:', props.characterArray[i].name)
-    
     const row = <tr key={i}>
       <th scope="row">{props.characterArray[i].name}</th> 
       <td>{props.characterArray[i].birthDate}</td>
@@ -36,17 +31,11 @@ function Table(props){
     )
     return table
 }
-
 export default Table
 
 
 
 
-
-
-  //
-
-  
   
   
   
